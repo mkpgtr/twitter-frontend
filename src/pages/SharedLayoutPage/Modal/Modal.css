@@ -1,0 +1,280 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+
+}
+body{
+    --twitter-color:#50b7f5;
+    --twitter-background:#d5d6d7;
+
+}
+
+.single-feed:hover{
+    background-color: #c0e7ff;
+    cursor: pointer;
+}
+.fa-trash-can{
+    font-size: 1.3rem;
+    padding:0.5rem;
+}
+
+
+.single-feed{
+    transition: 0.3s ease-out;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    border: 1px solid var(--twitter-background);
+}
+
+.upload-image-div{
+    padding-left:1rem;
+    
+}
+.upload-image-div i{
+    cursor:pointer; 
+}
+
+.tweet-btn{
+    background: var(--twitter-color);
+    width: 8rem;
+
+}
+.tweet-btn-2{
+    background: var(--twitter-color);
+}
+.sidebarOption{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.sidebarOption .material-symbols-outlined, .fa-message{
+    padding: 20px;
+}
+.sidebarOption h2{
+ font-weight: 800;
+ font-size: 20px;
+ margin-right:20px;
+}
+.sidebarOption:hover{
+    background-color: var(--twitter-background);
+    border-radius: 30px;
+    color:var(--twitter-color) ;
+}
+.container-lg{
+    display:flex;
+    max-width: 960px;
+    height: 100vh;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 10px;
+}
+.sidebar{
+    border-right: 1px solid var(--twitter-background);
+    flex:0.2;
+    min-width: 200px;
+    margin-top: 20px;
+    padding-left: 20px;
+    padding-right: 70px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+
+.last-sidebar-item{
+    margin-top:auto;
+    
+}
+.fa-message{
+    font-size: 30px;
+    color:var(--twitter-color);
+}
+.feed{
+    flex: 0.6;
+    border-right: 1px solid var(--twitter-background);
+    min-width: fit-content;
+    margin-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    overflow-y: scroll;
+}
+
+.single-tweet-text{
+    padding-left:3rem;
+    font-weight: 600;
+}
+
+.single-tweet-img-container{
+    width:30rem;
+    height:20rem;
+    padding-left:3rem;
+}
+
+.tweet-operations{
+    padding-left:3rem;
+}
+.single-tweet-img-container img{
+    width:100%;
+    height:100%;
+}
+
+
+
+.user-profile-img-container{
+    width:3rem;
+}
+.user-profile-img-container img{
+    width:100%;
+    border-radius: 50%;
+}
+
+.username-container{
+}
+.username-container span{
+    font-weight: bold;
+
+}
+
+
+
+.delete-icon-container{
+    margin-left:auto;
+
+}
+.feed-header{
+    background-color: white;
+
+}
+.feed-header h2{
+    font-size: 20px;
+    font-weight: 800;
+}
+.feed::-webkit-scrollbar{
+    display: none;
+}
+.new-tweet::placeholder{
+    padding-left: 0.5rem;
+    padding-top: 0.5rem;
+}
+.sidebarOption2{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.sidebarOption2 h2{
+    font-weight: 800;
+    font-size: 20px;
+    margin-right:20px;
+   }
+.retweeted-tweet{
+    padding-left:3rem;
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+    font-size: smaller;
+    color: rgb(139, 138, 138);
+    font-weight: 500;
+}
+.profile{
+    flex: 0.6;
+    border-right: 1px solid var(--twitter-background);
+    min-width: fit-content;
+    margin-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    overflow-y: scroll;
+}
+.profile::-webkit-scrollbar{
+    display: none;
+}
+.profile-details{
+    height:100%;
+    margin-top: 0.5rem;
+    background-image: linear-gradient(
+        to bottom,
+        var(--twitter-color) 20%,
+       white 20% 80%
+      );
+}
+.profile-information-img{
+    width: 7rem;
+    align-items: center;
+}
+.profile-information-img img{
+    width:100%;
+    border-radius: 50%;
+    
+}
+.profile-follow-andu-nfollow-btn{
+    background: black;
+    width: 6rem;
+}
+.profile-followbtn{
+    margin-top: 5.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+.profile-name h2{
+    font-weight: 600;
+    font-size: 25px;
+}
+.profile-name span{
+    font-size: medium;
+    color: gray;
+}
+.other-details{
+    padding-top: 1rem;
+    padding-left:1rem;
+    font-size: 14px;
+    color: gray;
+}
+.location{
+    padding-left: 1rem;
+}
+.followersandfollowing{
+    padding-top: 1rem;
+    padding-left:1rem;
+    font-weight: 600;
+}
+.followers{
+    padding-left: 0.7rem;
+}
+.headingoftweetsprofiloe{
+    padding-top: 1rem;
+    font-weight: 900;
+}
+
+
+
+
+
+
+
+/* ! these are the css styles I have written to debug while I was converting HTML to JSX */
+/* ! name and username container */
+
+.name-n-username-container h2{
+    width:110%;
+}
+
+
+.like-icon-container a{
+    text-decoration: none; color:#f55050; font-weight: 500;
+}
+
+.comment-icon-container a{
+    text-decoration: none; color:#50b7f5;font-weight: 500;
+}
+
+
+.profile-name h2{
+    width:110%;
+}
+
+.following span{
+    margin-right: 0.3rem;
+}
+.followers span{
+    margin-right: 0.3rem;
+}
